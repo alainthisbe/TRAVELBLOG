@@ -1,0 +1,613 @@
+body {
+
+    width: 100vw;
+
+}
+
+* {
+
+    font-family: 'RocknRoll One', sans-serif;
+
+}
+
+h3,
+h5 {
+
+    font-weight: lighter;
+}
+
+a {
+
+    text-decoration: none;
+    color: #2b80b9
+}
+
+i {
+
+    font-size: 40px;
+}
+
+.fa-calendar {
+
+    font-size: 20px;
+
+}
+
+header .fa-compass {
+
+    font-size: 100px;
+
+}
+
+nav .fa-compass {
+
+    font-size: 40px;
+
+}
+
+.fa-star {
+
+    font-size: 10px;
+
+}
+
+.fa-clock,
+.fa-plane-departure {
+
+    font-size: 40px;
+    color: #2b80b9;
+}
+
+.article-populaire-droite .fa-clock {
+
+    font-size: 20px;
+    color: #2b80b9;
+}
+
+.fa-brands {
+
+    font-size: 20px;
+    color: #2b80b9;
+
+}
+
+.note {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bouton {
+
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f2f7ba;
+    border: 2px solid white;
+    font-size: 15px;
+    color: #2b80b9;
+
+}
+
+.bouton-complet {
+
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f2f7ba;
+    border: 2px solid white;
+    font-size: 15px;
+    color: #2b80b9;
+
+}
+
+/************************************** Tableau principal ****************************************/
+body {
+
+    display: grid;
+    grid-template-rows: 55vh 10vh 140vh 280vh 60vh auto auto;
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+
+        "header"
+        "nav"
+        "bali"
+        "populaires"
+        "partenaires"
+        "icones"
+        "footer";
+
+}
+
+hr {
+
+    width: 80%;
+}
+
+/************************************** Tableau 3 icones avant footer ****************************************/
+#icones {
+
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas:
+
+        "article article article"
+        "article article article";
+}
+
+/************************************** Tableau liens de la Nav *********************************************/
+
+nav {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#bali {
+
+    background-image: url(./images/bali.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 25% 65% 10%;
+    grid-template-columns: 5% 20% 75%;
+
+}
+
+/************************************** Tableau - 2 colonnes populaires *********************************************/
+
+#populaires {
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+
+    grid-template-areas:
+
+        "populaire-left populaire-right";
+}
+
+#populaire-left {
+
+    grid-area: populaire-left;
+    background-color: #2b80b9;
+    color: white;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#populaire-right {
+
+    grid-area: populaire-right;
+    background-color: white;
+    color: black;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-populaire {
+
+    border: solid 1px #f2f7ba;
+    text-align: center;
+
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    box-shadow: 5px 5px 15px 5px #f2f7ba;
+}
+
+.article-populaire .image-client {
+
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.article-populaire .image-destination {
+
+    height: 120px;
+    width: 200px;
+    border: solid 2px white;
+
+}
+
+#derniers-articles {
+
+    display: flex;
+    justify-content: center;
+}
+
+#populaire-right h3 {
+
+    color: #2b80b9
+}
+
+#img-derniers-articles {
+
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+}
+
+.article-populaire-droite {
+
+
+    text-align: center;
+
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+
+.article-populaire-droite .image-client {
+
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.article-populaire-droite .image-populaire-droite {
+
+    height: 250px;
+    width: 400px;
+    border: solid 1px #f2f7ba;
+}
+
+#cartebali {
+
+    grid-column: 2;
+    grid-row: 2;
+    background-color: blue;
+    font-weight: lighter;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 30px;
+}
+
+#cartebali img {
+
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+nav a {
+
+    text-decoration: none;
+}
+
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+p {
+
+    text-align: center;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #f2f7ba;
+    width: 200px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+header {
+
+    grid-area: header;
+    background-image: url(./images/beach.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+}
+
+header p {
+
+    font-size: 15px;
+}
+
+nav {
+
+    grid-area: nav;
+    background-color: #f2f7ba;
+    color: #2b80b9;
+}
+
+#partenaires {
+
+    background-image: url(./images/plane.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #2b80b9;
+
+}
+
+
+#partenaires h2 {
+    color: #2b80b9
+}
+
+#partenaires p {
+    color: white;
+}
+
+
+#icones {
+
+    grid-area: icones;
+    background-color: #2b80b9;
+    background-size: cover;
+    color: white;
+    font-size: 1em;
+
+}
+
+#icones img {
+
+    height: 130px;
+    width: 140px;
+
+}
+
+
+footer {
+
+    background-color: #f2f7ba;
+    color: #2b80b9;
+
+}
+
+footer .reseaux {
+
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/******** a ajouter dans css *****/
+#hamburger {
+
+    display: none;
+    margin-left: 10px;
+}
+
+navabarTitle {
+
+    display: none;
+
+}
+
+/********* Masquer hamburger et titre travelblog en desktop ****/
+
+#hamburger {
+
+    display: none;
+    margin-left: 10px;
+}
+
+#navbarTitle {
+
+    display: none;
+
+}
+
+/****************************  RESPONSIVE *****************************/
+/************************* CSS pour rendre visible le hamburger *******/
+
+
+/*    règles communes aux mobiles + tablettes 
+
+ hamburger visible, navbar fixée en haut
+ changement de place du rectangle bleu sur partie "Bali) */
+
+@media screen and (max-width:991px) {
+
+    #hamburger {
+
+        color: #2b80b9;
+        display: block;
+        text-align: left;
+        margin: 20px 20px;
+    }
+
+    #navbarTitle {
+
+        display: block;
+
+        margin: 20px 40px;
+    }
+
+    #hamburgerAndTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hamburgerAndTitle h2 {
+        margin: 0 auto;
+        margin-top: 23px;
+
+    }
+
+
+    #navbar {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+
+    }
+
+    #bali {
+
+        grid-template-rows: 30% 65% 5%;
+        grid-template-columns: 5% 60% 35%;
+
+    }
+
+    #derniers-articles {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+/*  règles tablettes uniquement
+
+    on redéfinit la grille appliquée sur le body : 
+    grid-template-colums/rows/areas => voir maquette tablette) */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
+
+    body {
+
+        grid-template-rows: 55vh 140vh 280vh 60vh auto auto;
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+
+            "header"
+            "bali"
+            "populaires"
+            "partenaires"
+            "icones"
+            "footer";
+
+
+    }
+
+    #populaires {
+
+
+        grid-template-columns: 1fr 1fr;
+
+
+    }
+
+}
+
+
+/* règles mobiles uniquement 
+    on redéfinit la grille appliquée sur le body : 
+    grid-template-colums/rows/areas => voir maquette mobiles
+    + quelques changements de tailles des images / marges / polices
+     dans les différentes media queries (si besoin)  */
+
+@media screen and (max-width: 767px) {
+
+    #icones {
+
+        display: grid;
+        grid-template-rows: 6fr;
+        grid-template-columns: 1fr;
+
+    }
+
+    #icon1-text {
+
+        grid-column: 1;
+        grid-row: 1;
+
+    }
+
+    #icon2-text {
+
+        grid-column: 1;
+        grid-row: 3;
+
+    }
+
+    #icon3-text {
+
+        grid-column: 1;
+        grid-row: 5;
+
+    }
+
+    #icon1 {
+
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+
+    #icon2 {
+
+        grid-column: 1;
+        grid-row: 4;
+
+    }
+
+    #icon3 {
+
+        grid-column: 1;
+        grid-row: 6;
+
+    }
+
+    #populaires {
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+
+            "populaire-right"
+            "populaire-left";
+    }
+
+
+    body {
+
+        grid-template-rows: 55vh 140vh auto 60vh auto auto;
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+
+            "header"
+            "bali"
+            "populaires"
+            "partenaires"
+            "icones"
+            "footer";
+
+
+    }
+
+
+}
